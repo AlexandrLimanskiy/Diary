@@ -7,7 +7,7 @@ export default function TodoListTopPanel() {
             <div className={styles.topPanel}>
                 <div className={styles.topPanelContainer}>
                     <div className={styles.topPanelTitle}>
-                        <p>Todo</p>
+                        <p>Задачи</p>
                     </div>
                     <div className={styles.search}>
                         <form action="#">
@@ -15,7 +15,7 @@ export default function TodoListTopPanel() {
                         </form>
                     </div>
                     <div className={styles.exitButton}>
-                        <p><Link to={'/'}>Exit</Link></p>
+                        <p><Link to={'/'}>Выход</Link></p>
                     </div>
                 </div>
             </div>
