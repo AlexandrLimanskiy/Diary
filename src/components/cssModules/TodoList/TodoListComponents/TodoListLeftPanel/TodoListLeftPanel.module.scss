@@ -1,0 +1,27 @@
+.leftPanel {
+    
+}
+
+.leftPanelContainer {
+    padding: 20px;
+    width: 300px;
+    height: 700px;
+    border: 2px solid #5b0a94;
+    border-radius: 10px;
+}
+
+.myDay {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.myDaySvg {
+    width: 24px;
+    height: 24px;
+}
+
+.myDay {
+    font-size: 18px;
+}

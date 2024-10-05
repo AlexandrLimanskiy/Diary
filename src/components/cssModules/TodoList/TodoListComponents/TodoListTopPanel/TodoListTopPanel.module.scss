@@ -1,0 +1,29 @@
+.topPanel {
+    padding: 10px 40px;
+    border: 2px solid #5b0a94;
+    border-radius: 10px;
+}
+
+.topPanelContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topPanelTitle, .exitButton {
+    p {
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+.search {
+    input {
+        width: 300px;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: #333333;
+        color: #fff;
+    }
+}

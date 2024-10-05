@@ -1,0 +1,33 @@
+.offer {
+    margin-top: 150px;
+}
+
+.offerTitle {
+    p {
+        display: inline-block;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    margin-bottom: 20px;
+}
+
+.offerDescription {
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.moreInfoButton {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #5b0a94;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.moreInfoButton:hover {
+    opacity: 0.7;
+}
