@@ -6,7 +6,7 @@ export default function TodoListLeftPanel() {
             <div className={styles.leftPanel}>
                 <div className={styles.leftPanelContainer}>
                     <div className={styles.myDay}>
-                        <img src="/src/assets/myday.svg" alt="" className={styles.myDaySvg} />
+                    <img src="/diary/public/img/myday.svg" alt="" className={styles.myDaySvg} />
                         <p className={styles.myDayText}>Задачи на день</p>
                     </div>
                 </div>
