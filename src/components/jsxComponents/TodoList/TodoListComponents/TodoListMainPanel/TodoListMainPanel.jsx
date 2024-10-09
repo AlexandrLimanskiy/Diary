@@ -1,10 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from '/src/components/cssModules/TodoList/TodoListComponents/TodoListMainPanel/TodoListMainPanel.module.scss'
 import TaskList from './AddTask/TaskList'
 
 export default function TodoListMainPanel() {
     const [nameTask, setNameTask] = useState('') //имя созданной задачи
-    const [taskList, setTaskList] = useState([]) //массив хранения задач
+    const [taskList, setTaskList] = useState(() => {
+        const savedTasks = localStorage.getItem('tasks')
+        return savedTasks ? JSON.parse(savedTasks) : [];
+    }) //массив хранения задач
+    useEffect(() => {
+        localStorage.setItem('tasks', JSON.stringify(taskList))
+    }, [taskList])
     function addTaskFn(event) {
         event.preventDefault()
         const newTask = {
