@@ -12,7 +12,7 @@ function App() {
   const [saveUserName, setSaveUserName] = useState('userName')
   return (
     <>
-      <Router basename='/diary'>
+      <Router basename={import.meta.env.BASE_URL}>
         <header className='header'>
           <div className="container">
             <div className={styles.navMenu}>
