@@ -8,6 +8,14 @@ export default function TaskItem({taskName}) {
                     <div className="taskTitle">
                         <p>{taskName}</p>
                     </div>
+                    <div className={styles.taskButtons}>
+                        <div className={styles.buttons}>
+                            <p>Edit</p>
+                        </div>
+                        <div className={styles.buttons}>
+                            <p>Delete</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

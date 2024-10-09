@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
-import styles from '/src/components/cssModules/todoList/TodoListComponents/TodoListTopPanel/TodoListTopPanel.module.scss'
+import styles from '/src/components/cssModules/TodoList/TodoListComponents/TodoListTopPanel/TodoListTopPanel.module.scss'
 
 export default function TodoListTopPanel() {
     return(
