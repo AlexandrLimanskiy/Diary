@@ -12,7 +12,7 @@ function App() {
   const [saveUserName, setSaveUserName] = useState('userName')
   return (
     <>
-      <Router>
+      <Router basename='/diary'>
         <header className='header'>
           <div className="container">
             <div className={styles.navMenu}>
