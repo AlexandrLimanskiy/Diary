@@ -5,7 +5,7 @@ export default function TaskItem({taskName}) {
         <>
             <div className={styles.taskItem}>
                 <div className={styles.taskItemContainer}>
-                    <div className="taskTitle">
+                    <div className={styles.taskTitle}>
                         <p>{taskName}</p>
                     </div>
                     <div className={styles.taskButtons}>
