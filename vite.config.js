@@ -12,4 +12,7 @@ export default defineConfig({
     },
   },
   base: '/diary',
+  build: {
+    outDir: 'dist'
+  }
 })
