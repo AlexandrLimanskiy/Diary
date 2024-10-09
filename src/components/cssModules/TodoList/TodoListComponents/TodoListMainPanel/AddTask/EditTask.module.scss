@@ -1,0 +1,30 @@
+.formEdit {
+    display: flex;
+    gap: 10px;
+}
+
+.title {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #333333;
+    color: #fff;
+}
+
+.save {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.close {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}

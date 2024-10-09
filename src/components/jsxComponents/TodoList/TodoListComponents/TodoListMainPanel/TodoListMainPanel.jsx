@@ -14,6 +14,14 @@ export default function TodoListMainPanel() {
         setTaskList([...taskList, newTask])
         setNameTask('')
     }
+    function editTaskFn(taskId, newName) {
+        setTaskList(taskList.map(task => 
+            task.id === taskId ? {...task, name: newName} : task
+        ))
+    }
+    function deleteTaskFn(taskId) {
+        setTaskList(taskList.filter(task => task.id !== taskId))
+    }
     return(
         <>
             <div className={styles.mainPanel}>
@@ -25,7 +33,7 @@ export default function TodoListMainPanel() {
                         </form>
                     </div>
                     <div className={styles.listTask}>
-                        {taskList.map((task) => (<TaskList key={task.id} taskName={task.name}/>))}
+                        {taskList.map((task) => (<TaskList key={task.id} taskName={task.name} onDelete={() => deleteTaskFn(task.id)} onEdit={(newName) => editTaskFn(task.id, newName)} />))}
                     </div>
                 </div>
             </div>
